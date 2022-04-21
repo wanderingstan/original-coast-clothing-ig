@@ -98,19 +98,19 @@ module.exports = class Curation {
               {
                 title: title,
                 subtitle: subtitle,
-                image_url: `${config.appUrl}/styles/neutral-${occasion}.jpg`,
+                image_url: `${config.appUrl}/looks/neutral-${occasion}.jpg`,
                 buttons: buttons,
               },
               {
                 title: title,
                 subtitle: subtitle,
-                image_url: `${config.appUrl}/styles/female-${occasion}.jpg`,
+                image_url: `${config.appUrl}/looks/female-${occasion}.jpg`,
                 buttons: buttons,
               },
               {
                 title: title,
                 subtitle: subtitle,
-                image_url: `${config.appUrl}/styles/male-${occasion}.jpg`,
+                image_url: `${config.appUrl}/looks/male-${occasion}.jpg`,
                 buttons: buttons,
               },
             ],
@@ -122,7 +122,7 @@ module.exports = class Curation {
     }
 
     let response = Response.genGenericTemplate(
-      `${config.appUrl}/styles/${outfit}.jpg`,
+      `${config.appUrl}/looks/${outfit}.jpg`,
       i18n.__("curation.title"),
       i18n.__("curation.subtitle"),
       buttons
